@@ -34,6 +34,17 @@ public class Fdroid_Demo extends Capabilities {
 			driver = AppiumCapabilities();
 			driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		}
+
+		    @Test(enabled = false)
+		    public void testFdroidApp() throws InterruptedException {
+			
+		
+			// Perform actions
+			
+			driver.findElement(MobileBy.AccessibilityId("Search")).click();
+			driver.findElement(MobileBy.id("org.fdroid.fdroid:id/search_src_text")).sendKeys("PUBG");
+		    }
+	
 		
 		@Test(enabled = false)
 		public void tcl() throws InterruptedException {
